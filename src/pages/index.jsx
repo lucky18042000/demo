@@ -51,7 +51,6 @@ function Index() {
     };
   }, []);
 
-  // Filter data based on the selected category and search input
   const filteredData = apiData?.filter((item) => {
     const value = item[selectedCategory]?.toString()?.toLowerCase();
     return value?.includes(searchInput.toLowerCase());
